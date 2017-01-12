@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/*使布局整体居中，并设置边框*/
+#header, #article, #footer {
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 80%;
+}
+
+/*End 使布局整体居中，并设置边框*/
+
+/*头布局*/
+#header {
+    background: #eee;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+#header a {
+    color: #000;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+/*End 头布局*/
+
+/*正文*/
+#article {
+    margin-top: 10px;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.imglist {
+    /*弹性居中*/
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    /*End 居中*/
+
+    /*垂直分布*/
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    /*End 垂直分布*/
+
+    /*设置每个的权重*/
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    /*End 设置每个的权重*/
+}
+
+img {
+    border-radius: 10px;
+}
+
+.imglist div {
+    width: 180px;
+    height: 180px;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+}
+
+/*左边栏*/
+.left {
+    border-radius: 10px;
+    width: 200px;
+    height: 100px;
+    background: #eee;
+    float: left;
+    margin-left: -100%;
+    padding-bottom: 999px;
+    margin-bottom: -999px;
+    overflow: hidden;
+}
+
+/*End 左边栏*/
+
+/*中间*/
+.middle {
+    float: left;
+    width: 100%;
+
+}
+
+.inner {
+    background: #eee;
+    margin: 0 210px 0 210px;
+    padding-bottom: 999px;
+    margin-bottom: -999px;
+    overflow: hidden;
+}
+
+.inner h3 {
+    text-align: center;
+}
+
+.inner p {
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*End 中间*/
+
+/*右边栏*/
+.right {
+    width: 200px;
+    height: 50px;
+    background: #eee;
+    float: left;
+    margin-left: -200px;
+    margin-bottom: -999px;
+    padding-bottom: 999px;
+    overflow: hidden;
+}
+
+/*End 右边栏*/
+/*End 正文*/
+
+/*底部*/
+#footer {
+    margin-top: 10px;
+    background: #eee;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+/*End 底部*/
